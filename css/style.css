@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: Maison Neue;
+    src: url(./fonts/Net-Maison-Neue-Bold.ttf);
+}
+
+a {
+    color: #212632;
+}
+
+.feature-heading,
+.feature-info-heading,
+.faq-heading,
+.faq-info-heading {
+    text-align: center;
+}
+
+#feature-container {
+    margin: 64px 120px 96px 120px;
+}
+
+.feature-heading {
+    font-family: 'SangBleu Kingdom';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 140%;
+    color: #212632;
+    margin-bottom: 30px;
+}
+
+.feature-info-heading {
+    font-family: 'Maison Neue', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#feature-container .feature-collections .feature-item img {
+    width: 60%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#feature-container .feature-collections .feature-item p {
+    font-family: 'Maison Neue', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: center;
+    color: #212632;
+
+}
+
+#feature-container .feature-collections {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* feature-container  */
+
+
+#faq-container {
+    background-color: #f4f7f1;
+    padding-top: 123px;
+}
+
+#faq-container .faq-heading {
+    font-family: 'SangBleu Kingdom';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 140%;
+    text-align: center;
+    color: #212632;
+}
+
+#faq-container .faq-info-heading {
+    font-family: 'Maison Neue', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+#faq-container .faq-description {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#faq-container .faq-accordion .accordion {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 65px 384px;
+}
+
+#faq-container .faq-description .faq-img img {
+    width: 100%;
+}
+
+
+#faq-container .faq-accordion .accordion .faq-number {
+    width: 52px;
+    height: 52px;
+    padding: 15px 20px 10px 18px;
+    border: 3px solid #FF0000;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text h2 {
+    font-family: 'SangBleu Kingdom';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: #212632;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text p {
+    font-family: 'Maison Neue', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 170%;
+    color: #678245;
+}
+
+
+#faq-container .faq-accordion .accordion .accordion-text li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li .question-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li .question-arrow .question {
+    font-family: 'Maison Neue', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+    color: #212632;
+    transition: all 0.3s ease;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li .question-arrow .arrow {
+    font-size: 20px;
+    color: #212632;
+    transition: all 0.3s ease;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li.showAnswer .question-arrow .arrow {
+    transform: rotate(-180deg);
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li .faq-info {
+    margin: 15px 0;
+}
+
+
+#faq-container .faq-accordion .accordion .accordion-text li .line,
+.line {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #212632;
+    opacity: 0.4;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li p {
+    font-family: 'Maison Neue', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    color: #000000 !important;
+    display: none;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li p i {
+    margin-right: 5px;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li .faq-info p {
+    color: #212632 !important;
+}
+
+#faq-container .faq-accordion .accordion .accordion-text li.showAnswer p {
+    display: block;
+}
+
+
+#faq-container .review-container {
+    width: 384px;
+    height: 130px;
+    background: #FFFFFF;
+    border: 1px solid #212632;
+    padding: 7px;
+    margin-top: -100px;
+    margin-left: 18%;
+    margin-bottom: 5px;
+    z-index: 1;
+    position: relative;
+}
+
+#faq-container .review-content {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#faq-container .review-container .fa-star {
+    color: goldenrod;
+    font-size: 12px;
+}
+
+#faq-container .review-text {
+    font-family: 'SangBleu Kingdom';
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#faq-container .review-container .review-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#faq-container .review-container .review-footer .footer-left-text {
+    color: #B3C0A2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#faq-container .review-container .review-footer .footer-right-text {
+    font-family: 'Maison Neue', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+#faq-container .review-container .review-footer .footer-right-text a {
+    text-decoration: none;
+}
+
+#faq-container .review-container .review-footer .footer-right-text .icon {
+    font-size: 11px;
+}
+
+
+@media (max-width:767px) {
+    #feature-container {
+        margin: 64px 50px 48px 50px;
+    }
+
+    .feature-heading {
+        font-size: 28px;
+    }
+
+    .feature-info-heading {
+        font-size: 17px;
+    }
+
+    #feature-container .feature-collections .feature-item p {
+        font-size: 13px;
+    }
+
+
+    #feature-container {
+        max-width: 100%;
+    }
+
+    #faq-container {
+        max-width: 100%;
+        padding: 50px;
+        display: grid;
+        place-content: center;
+    }
+
+
+    #feature-container .feature-collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    #faq-container .faq-description {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #faq-container .faq-accordion .accordion {
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    #faq-container .faq-heading {
+        font-size: 28px;
+    }
+
+    #faq-container .faq-info-heading {
+        font-size: 17px;
+    }
+
+    #faq-container .faq-accordion .accordion .accordion-text h2 {
+        font-size: 28px;
+    }
+
+    #faq-container .faq-accordion .accordion .accordion-text p {
+        font-size: 17px;
+    }
+
+    #faq-container .review-container {
+        width: 100%;
+        height: 157px;
+        margin-top: 30px;
+        margin-left: 0;
+        border: none;
+        box-shadow: 1px 1px 5px #678245;
+    }
+
+    #faq-container .review-text {
+        font-size: 16px;
+    }
+}
